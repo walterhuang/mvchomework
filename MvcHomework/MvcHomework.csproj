@@ -39,6 +39,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Elmah">
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah.Mvc">
+      <HintPath>..\packages\Elmah.MVC.2.1.1\lib\net40\Elmah.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="PagedList">
       <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
@@ -167,8 +173,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ClientController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OccupationController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\OrderLineController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -286,6 +295,21 @@
     <Content Include="Views\Order\Details.cshtml" />
     <Content Include="Views\Order\Edit.cshtml" />
     <Content Include="Views\Order\Index.cshtml" />
+    <Content Include="Views\Client\Create.cshtml" />
+    <Content Include="Views\Client\Delete.cshtml" />
+    <Content Include="Views\Client\Details.cshtml" />
+    <Content Include="Views\Client\Edit.cshtml" />
+    <Content Include="Views\Client\Index.cshtml" />
+    <Content Include="Views\Occupation\Create.cshtml" />
+    <Content Include="Views\Occupation\Delete.cshtml" />
+    <Content Include="Views\Occupation\Details.cshtml" />
+    <Content Include="Views\Occupation\Edit.cshtml" />
+    <Content Include="Views\Occupation\Index.cshtml" />
+    <Content Include="Views\OrderLine\Create.cshtml" />
+    <Content Include="Views\OrderLine\Delete.cshtml" />
+    <Content Include="Views\OrderLine\Details.cshtml" />
+    <Content Include="Views\OrderLine\Edit.cshtml" />
+    <Content Include="Views\OrderLine\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

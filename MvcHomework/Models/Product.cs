@@ -11,6 +11,8 @@ namespace MvcHomework.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class Product
     {
@@ -20,7 +22,10 @@ namespace MvcHomework.Models
         }
     
         public int ProductId { get; set; }
+        [DisplayName("產品名稱")]
+        [Required]
         public string ProductName { get; set; }
+        [DisplayName("價格")]
         public Nullable<decimal> Price { get; set; }
         public Nullable<bool> Active { get; set; }
         public Nullable<decimal> Stock { get; set; }
